@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\libs\base\camera.h" />
+    <ClInclude Include="..\libs\base\camera_database.h" />
+    <ClInclude Include="..\libs\base\camera_models.h" />
+    <ClInclude Include="..\libs\base\camera_rig.h" />
+    <ClInclude Include="..\libs\base\correspondence_graph.h" />
+    <ClInclude Include="..\libs\base\cost_functions.h" />
+    <ClInclude Include="..\libs\base\database.h" />
+    <ClInclude Include="..\libs\base\database_cache.h" />
+    <ClInclude Include="..\libs\base\essential_matrix.h" />
+    <ClInclude Include="..\libs\base\gps.h" />
+    <ClInclude Include="..\libs\base\homography_matrix.h" />
+    <ClInclude Include="..\libs\base\image.h" />
+    <ClInclude Include="..\libs\base\image_reader.h" />
+    <ClInclude Include="..\libs\base\line.h" />
+    <ClInclude Include="..\libs\base\point2d.h" />
+    <ClInclude Include="..\libs\base\point3d.h" />
+    <ClInclude Include="..\libs\base\polynomial.h" />
+    <ClInclude Include="..\libs\base\pose.h" />
+    <ClInclude Include="..\libs\base\projection.h" />
+    <ClInclude Include="..\libs\base\reconstruction.h" />
+    <ClInclude Include="..\libs\base\reconstruction_manager.h" />
+    <ClInclude Include="..\libs\base\scene_clustering.h" />
+    <ClInclude Include="..\libs\base\similarity_transform.h" />
+    <ClInclude Include="..\libs\base\track.h" />
+    <ClInclude Include="..\libs\base\triangulation.h" />
+    <ClInclude Include="..\libs\base\undistortion.h" />
+    <ClInclude Include="..\libs\base\visibility_pyramid.h" />
+    <ClInclude Include="..\libs\base\warp.h" />
+    <ClInclude Include="..\libs\controllers\automatic_reconstruction.h" />
+    <ClInclude Include="..\libs\controllers\controller_incremental_mapper.h" />
+    <ClInclude Include="..\libs\estimators\absolute_pose.h" />
+    <ClInclude Include="..\libs\estimators\affine_transform.h" />
+    <ClInclude Include="..\libs\estimators\coordinate_frame.h" />
+    <ClInclude Include="..\libs\estimators\essential_matrix_coeffs.h" />
+    <ClInclude Include="..\libs\estimators\essential_matrix_poly.h" />
+    <ClInclude Include="..\libs\estimators\es_essential_matrix.h" />
+    <ClInclude Include="..\libs\estimators\es_homography_matrix.h" />
+    <ClInclude Include="..\libs\estimators\es_pose.h" />
+    <ClInclude Include="..\libs\estimators\es_triangulation.h" />
+    <ClInclude Include="..\libs\estimators\es_two_view_geometry.h" />
+    <ClInclude Include="..\libs\estimators\es_utils.h" />
+    <ClInclude Include="..\libs\estimators\euclidean_transform.h" />
+    <ClInclude Include="..\libs\estimators\fundamental_matrix.h" />
+    <ClInclude Include="..\libs\estimators\generalized_absolute_pose.h" />
+    <ClInclude Include="..\libs\estimators\generalized_absolute_pose_coeffs.h" />
+    <ClInclude Include="..\libs\estimators\generalized_relative_pose.h" />
+    <ClInclude Include="..\libs\estimators\similarity_transform.h" />
+    <ClInclude Include="..\libs\estimators\translation_transform.h" />
+    <ClInclude Include="..\libs\feature\extraction.h" />
+    <ClInclude Include="..\libs\feature\matching.h" />
+    <ClInclude Include="..\libs\feature\sift.h" />
+    <ClInclude Include="..\libs\feature\types.h" />
+    <ClInclude Include="..\libs\feature\utils.h" />
+    <ClInclude Include="..\libs\optim\bundle_adjustment.h" />
+    <ClInclude Include="..\libs\optim\combination_sampler.h" />
+    <ClInclude Include="..\libs\optim\least_absolute_deviations.h" />
+    <ClInclude Include="..\libs\optim\loransac.h" />
+    <ClInclude Include="..\libs\optim\progressive_sampler.h" />
+    <ClInclude Include="..\libs\optim\random_sampler.h" />
+    <ClInclude Include="..\libs\optim\ransac.h" />
+    <ClInclude Include="..\libs\optim\sampler.h" />
+    <ClInclude Include="..\libs\optim\sprt.h" />
+    <ClInclude Include="..\libs\optim\support_measurement.h" />
+    <ClInclude Include="..\libs\retrieval\geometry.h" />
+    <ClInclude Include="..\libs\retrieval\inverted_file.h" />
+    <ClInclude Include="..\libs\retrieval\inverted_file_entry.h" />
+    <ClInclude Include="..\libs\retrieval\inverted_index.h" />
+    <ClInclude Include="..\libs\retrieval\utils.h" />
+    <ClInclude Include="..\libs\retrieval\visual_index.h" />
+    <ClInclude Include="..\libs\retrieval\vote_and_verify.h" />
+    <ClInclude Include="..\libs\sfm\incremental_mapper.h" />
+    <ClInclude Include="..\libs\sfm\incremental_triangulator.h" />
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\CLTexImage.h" />
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\CuTexImage.h" />
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\FrameBufferObject.h" />
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\GlobalUtil.h" />
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\GLTexImage.h" />
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\LiteWindow.h" />
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\ProgramCG.h" />
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\ProgramCL.h" />
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\ProgramCU.h" />
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\ProgramGLSL.h" />
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\ProgramGPU.h" />
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\PyramidCL.h" />
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\PyramidCU.h" />
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\PyramidGL.h" />
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\ShaderMan.h" />
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\SiftGPU.h" />
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\SiftMatch.h" />
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\SiftMatchCU.h" />
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\SiftPyramid.h" />
+    <ClInclude Include="..\libs\util\alignment.h" />
+    <ClInclude Include="..\libs\util\bitmap.h" />
+    <ClInclude Include="..\libs\util\cache.h" />
+    <ClInclude Include="..\libs\util\camera_specs.h" />
+    <ClInclude Include="..\libs\util\cuda.h" />
+    <ClInclude Include="..\libs\util\cudacc.h" />
+    <ClInclude Include="..\libs\util\endian.h" />
+    <ClInclude Include="..\libs\util\logging.h" />
+    <ClInclude Include="..\libs\util\math.h" />
+    <ClInclude Include="..\libs\util\matrix.h" />
+    <ClInclude Include="..\libs\util\misc.h" />
+    <ClInclude Include="..\libs\util\opengl_utils.h" />
+    <ClInclude Include="..\libs\util\option_manager.h" />
+    <ClInclude Include="..\libs\util\ply.h" />
+    <ClInclude Include="..\libs\util\random.h" />
+    <ClInclude Include="..\libs\util\sqlite3_utils.h" />
+    <ClInclude Include="..\libs\util\string.h" />
+    <ClInclude Include="..\libs\util\threading.h" />
+    <ClInclude Include="..\libs\util\timer.h" />
+    <ClInclude Include="..\libs\util\types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\libs\base\camera.cc" />
+    <ClCompile Include="..\libs\base\camera_database.cc" />
+    <ClCompile Include="..\libs\base\camera_models.cc" />
+    <ClCompile Include="..\libs\base\camera_rig.cc" />
+    <ClCompile Include="..\libs\base\correspondence_graph.cc" />
+    <ClCompile Include="..\libs\base\database.cc" />
+    <ClCompile Include="..\libs\base\database_cache.cc" />
+    <ClCompile Include="..\libs\base\essential_matrix.cc" />
+    <ClCompile Include="..\libs\base\gps.cc" />
+    <ClCompile Include="..\libs\base\homography_matrix.cc" />
+    <ClCompile Include="..\libs\base\image.cc" />
+    <ClCompile Include="..\libs\base\image_reader.cc" />
+    <ClCompile Include="..\libs\base\line.cc" />
+    <ClCompile Include="..\libs\base\point2d.cc" />
+    <ClCompile Include="..\libs\base\point3d.cc" />
+    <ClCompile Include="..\libs\base\polynomial.cc" />
+    <ClCompile Include="..\libs\base\pose.cc" />
+    <ClCompile Include="..\libs\base\projection.cc" />
+    <ClCompile Include="..\libs\base\reconstruction.cc" />
+    <ClCompile Include="..\libs\base\reconstruction_manager.cc" />
+    <ClCompile Include="..\libs\base\scene_clustering.cc" />
+    <ClCompile Include="..\libs\base\similarity_transform.cc" />
+    <ClCompile Include="..\libs\base\track.cc" />
+    <ClCompile Include="..\libs\base\triangulation.cc" />
+    <ClCompile Include="..\libs\base\undistortion.cc" />
+    <ClCompile Include="..\libs\base\visibility_pyramid.cc" />
+    <ClCompile Include="..\libs\base\warp.cc" />
+    <ClCompile Include="..\libs\controllers\automatic_reconstruction.cc" />
+    <ClCompile Include="..\libs\controllers\controller_incremental_mapper.cc" />
+    <ClCompile Include="..\libs\estimators\absolute_pose.cc" />
+    <ClCompile Include="..\libs\estimators\affine_transform.cc" />
+    <ClCompile Include="..\libs\estimators\coordinate_frame.cc" />
+    <ClCompile Include="..\libs\estimators\es_essential_matrix.cc" />
+    <ClCompile Include="..\libs\estimators\es_homography_matrix.cc" />
+    <ClCompile Include="..\libs\estimators\es_pose.cc" />
+    <ClCompile Include="..\libs\estimators\es_triangulation.cc" />
+    <ClCompile Include="..\libs\estimators\es_two_view_geometry.cc" />
+    <ClCompile Include="..\libs\estimators\es_utils.cc" />
+    <ClCompile Include="..\libs\estimators\fundamental_matrix.cc" />
+    <ClCompile Include="..\libs\estimators\generalized_absolute_pose.cc" />
+    <ClCompile Include="..\libs\estimators\generalized_absolute_pose_coeffs.cc" />
+    <ClCompile Include="..\libs\estimators\generalized_relative_pose.cc" />
+    <ClCompile Include="..\libs\feature\extraction.cc" />
+    <ClCompile Include="..\libs\feature\matching.cc" />
+    <ClCompile Include="..\libs\feature\sift.cc" />
+    <ClCompile Include="..\libs\feature\types.cc" />
+    <ClCompile Include="..\libs\feature\utils.cc" />
+    <ClCompile Include="..\libs\optim\bundle_adjustment.cc" />
+    <ClCompile Include="..\libs\optim\combination_sampler.cc" />
+    <ClCompile Include="..\libs\optim\least_absolute_deviations.cc" />
+    <ClCompile Include="..\libs\optim\progressive_sampler.cc" />
+    <ClCompile Include="..\libs\optim\random_sampler.cc" />
+    <ClCompile Include="..\libs\optim\sprt.cc" />
+    <ClCompile Include="..\libs\optim\support_measurement.cc" />
+    <ClCompile Include="..\libs\retrieval\geometry.cc" />
+    <ClCompile Include="..\libs\retrieval\vote_and_verify.cc" />
+    <ClCompile Include="..\libs\sfm\incremental_mapper.cc" />
+    <ClCompile Include="..\libs\sfm\incremental_triangulator.cc" />
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\CLTexImage.cpp" />
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\CuTexImage.cpp" />
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\FrameBufferObject.cpp" />
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\GlobalUtil.cpp" />
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\GLTexImage.cpp" />
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\ProgramCG.cpp" />
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\ProgramCL.cpp" />
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\ProgramGLSL.cpp" />
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\PyramidCL.cpp" />
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\PyramidCU.cpp" />
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\PyramidGL.cpp" />
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\ShaderMan.cpp" />
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\SiftGPU.cpp" />
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\SiftMatch.cpp" />
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\SiftMatchCU.cpp" />
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\SiftPyramid.cpp" />
+    <ClCompile Include="..\libs\util\bitmap.cc" />
+    <ClCompile Include="..\libs\util\camera_specs.cc" />
+    <ClCompile Include="..\libs\util\cuda.cc" />
+    <ClCompile Include="..\libs\util\cudacc.cc" />
+    <ClCompile Include="..\libs\util\logging.cc" />
+    <ClCompile Include="..\libs\util\math.cc" />
+    <ClCompile Include="..\libs\util\misc.cc" />
+    <ClCompile Include="..\libs\util\opengl_utils.cc" />
+    <ClCompile Include="..\libs\util\option_manager.cc" />
+    <ClCompile Include="..\libs\util\ply.cc" />
+    <ClCompile Include="..\libs\util\random.cc" />
+    <ClCompile Include="..\libs\util\string.cc" />
+    <ClCompile Include="..\libs\util\threading.cc" />
+    <ClCompile Include="..\libs\util\timer.cc" />
+    <ClCompile Include="..\libs\util\version.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\libs\thirdparty\SiftGPU\LICENSE" />
+    <CudaCompile Include="..\libs\thirdparty\SiftGPU\ProgramCU.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <None Include="..\libs\util\version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\libs\thirdparty\SiftGPU\CMakeLists.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{964be182-3eef-415e-9b25-c1510c2cc21b}</ProjectGuid>
+    <RootNamespace>rigsfm</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.0.props" />
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;RIGSFM_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;RIGSFM_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;MultiCamSFM_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);GLOG_NO_ABBREVIATED_SEVERITIES;_CRT_SECURE_NO_WARNINGS;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;COLMAP_GPU_ENABLED;_SILENCE_CXX17_ADAPTOR_TYPEDEFS_DEPRECATION_WARNING;_SILENCE_CXX17_RESULT_OF_DEPRECATION_WARNING;COLMAP_CUDA_ENABLED;CUDA_SIFTGPU_ENABLED;NOMINMAX;PCL_NO_PRECOMPILE;SIFTGPU_NO_DEVIL;__SSE2__</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>F:\ThirtyLib\Install_opencv4.6.0\Install_opencv4.6.0\install\include;F:\ThirtyLib\ceres_2.2.0_cuda\ceres_2.2.0_cuda\include;F:\ThirtyLib\PCL 1.10.1\include\pcl-1.10;F:\ThirtyLib\PCL 1.10.1\3rdParty\Boost\include\boost-1_72;F:\ThirtyLib\glew\include;F:\ThirtyLib\glfw\include;..\libs;F:\ThirtyLib\sqlite\include;F:\ThirtyLib\FreeImage;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include;F:\ThirtyLib\flann\include;F:\ThirtyLib\pthread\include;..\libs\thirdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>F:\ThirtyLib\PCL 1.10.1\lib;F:\ThirtyLib\ceres\ceres\lib;F:\ThirtyLib\PCL 1.10.1\3rdParty\Boost\lib;F:\ThirtyLib\Install_opencv4.6.0\Install_opencv4.6.0\install\lib;F:\ThirtyLib\glew\lib;F:\ThirtyLib\glfw\lib-vc2019;F:\ThirtyLib\sqlite\lib;F:\ThirtyLib\FreeImage;F:\ThirtyLib\flann_1.9\lib;$(OutDir);C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64;F:\ThirtyLib\pthread\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ceres-debug.lib;opencv_world460d.lib;gflags_debug.lib;glogd.lib;pcl_commond.lib;pcl_featuresd.lib;pcl_filtersd.lib;pcl_iod.lib;pcl_io_plyd.lib;pcl_kdtreed.lib;pcl_keypointsd.lib;pcl_mld.lib;pcl_octreed.lib;pcl_outofcored.lib;pcl_peopled.lib;pcl_recognitiond.lib;pcl_registrationd.lib;pcl_sample_consensusd.lib;pcl_searchd.lib;pcl_segmentationd.lib;pcl_stereod.lib;pcl_surfaced.lib;pcl_trackingd.lib;pcl_visualizationd.lib;glew32.lib;glfw3.lib;sqlite3.lib;FreeImage.lib;User32.lib;Gdi32.lib;opengl32.lib;glu32.lib;cudart.lib;pthreadVC2.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;MultiCamSFM_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions);GLOG_NO_ABBREVIATED_SEVERITIES;_CRT_SECURE_NO_WARNINGS;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;COLMAP_GPU_ENABLED;_SILENCE_CXX17_ADAPTOR_TYPEDEFS_DEPRECATION_WARNING;_SILENCE_CXX17_RESULT_OF_DEPRECATION_WARNING;COLMAP_CUDA_ENABLED;CUDA_SIFTGPU_ENABLED;NOMINMAX;PCL_NO_PRECOMPILE;SIFTGPU_NO_DEVIL;__SSE2__</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>F:\ThirtyLib\Install_opencv4.6.0\Install_opencv4.6.0\install\include;F:\ThirtyLib\ceres_2.2.0_cuda\ceres_2.2.0_cuda\include;F:\ThirtyLib\PCL 1.10.1\include\pcl-1.10;F:\ThirtyLib\PCL 1.10.1\3rdParty\Boost\include\boost-1_72;F:\ThirtyLib\glew\include;F:\ThirtyLib\glfw\include;..\libs;F:\ThirtyLib\sqlite\include;F:\ThirtyLib\FreeImage;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include;F:\ThirtyLib\flann\include;F:\ThirtyLib\pthread\include;..\libs\thirdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalLibraryDirectories>F:\ThirtyLib\PCL 1.10.1\lib;F:\ThirtyLib\ceres\ceres\lib;F:\ThirtyLib\PCL 1.10.1\3rdParty\Boost\lib;F:\ThirtyLib\Install_opencv4.6.0\Install_opencv4.6.0\install\lib;F:\ThirtyLib\glew\lib;F:\ThirtyLib\glfw\lib-vc2019;F:\ThirtyLib\sqlite\lib;F:\ThirtyLib\FreeImage;F:\ThirtyLib\flann_1.9\lib;$(OutDir);C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64;F:\ThirtyLib\pthread\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ceres.lib;opencv_world460.lib;gflags.lib;glog.lib;pcl_common.lib;pcl_features.lib;pcl_filters.lib;pcl_io.lib;pcl_io_ply.lib;pcl_kdtree.lib;pcl_keypoints.lib;pcl_ml.lib;pcl_octree.lib;pcl_outofcore.lib;pcl_people.lib;pcl_recognitiond.lib;pcl_registration.lib;pcl_sample_consensus.lib;pcl_search.lib;pcl_segmentation.lib;pcl_stereo.lib;pcl_surface.lib;pcl_tracking.lib;pcl_visualization.lib;%(AdditionalDependencies);glew32.lib;glfw3.lib;sqlite3.lib;FreeImage.lib;User32.lib;Gdi32.lib;opengl32.lib;glu32.lib;cudart.lib;pthreadVC2.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.0.targets" />
+  </ImportGroup>
+</Project>

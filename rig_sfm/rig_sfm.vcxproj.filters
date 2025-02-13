@@ -1,0 +1,664 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{266aced5-8b01-4963-b56d-415864dbd63c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="controllers">
+      <UniqueIdentifier>{afb4aa2a-7997-4576-b223-d8b2901db002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="estimators">
+      <UniqueIdentifier>{6594a969-f26f-4ae2-84f4-14b999e7b08c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="feature">
+      <UniqueIdentifier>{26fa0acb-9190-4a96-bd11-ab4d94afd370}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="optim">
+      <UniqueIdentifier>{1c8ee74f-617d-4a36-8194-10d32840b1d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sfm">
+      <UniqueIdentifier>{cdad6d4f-f4ea-4596-9610-99bbdfd994b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{fec5a5f2-97f6-4d53-9ea5-134058a9a574}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty">
+      <UniqueIdentifier>{b1de0910-b1c2-48b1-941f-358c7fd0f5bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="retrieval">
+      <UniqueIdentifier>{d5022131-cadb-433f-959b-bbde57631660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\VLFeat">
+      <UniqueIdentifier>{6c8bf957-2245-4b8d-91b1-3f93a2e5de80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\SiftGPU">
+      <UniqueIdentifier>{43f28120-89fc-40cf-85c2-ead7aca1c585}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\libs\util\alignment.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\util\bitmap.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\util\cache.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\util\camera_specs.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\util\cuda.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\util\cudacc.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\util\endian.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\util\logging.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\util\math.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\util\matrix.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\util\misc.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\util\opengl_utils.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\util\option_manager.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\util\ply.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\util\random.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\util\sqlite3_utils.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\util\string.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\util\threading.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\util\timer.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\util\types.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\feature\extraction.h">
+      <Filter>feature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\feature\matching.h">
+      <Filter>feature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\feature\sift.h">
+      <Filter>feature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\feature\types.h">
+      <Filter>feature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\feature\utils.h">
+      <Filter>feature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\retrieval\geometry.h">
+      <Filter>retrieval</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\retrieval\inverted_file.h">
+      <Filter>retrieval</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\retrieval\inverted_file_entry.h">
+      <Filter>retrieval</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\retrieval\inverted_index.h">
+      <Filter>retrieval</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\retrieval\utils.h">
+      <Filter>retrieval</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\retrieval\visual_index.h">
+      <Filter>retrieval</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\retrieval\vote_and_verify.h">
+      <Filter>retrieval</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\camera.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\camera_database.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\camera_models.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\camera_rig.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\correspondence_graph.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\cost_functions.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\database.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\database_cache.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\essential_matrix.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\gps.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\homography_matrix.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\image.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\image_reader.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\line.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\point2d.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\point3d.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\polynomial.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\pose.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\projection.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\reconstruction.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\reconstruction_manager.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\scene_clustering.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\similarity_transform.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\track.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\triangulation.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\undistortion.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\visibility_pyramid.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\base\warp.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\CLTexImage.h">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\CuTexImage.h">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\FrameBufferObject.h">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\GlobalUtil.h">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\GLTexImage.h">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\LiteWindow.h">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\ProgramCG.h">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\ProgramCL.h">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\ProgramCU.h">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\ProgramGLSL.h">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\ProgramGPU.h">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\PyramidCL.h">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\PyramidCU.h">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\PyramidGL.h">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\ShaderMan.h">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\SiftGPU.h">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\SiftMatch.h">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\SiftMatchCU.h">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\thirdparty\SiftGPU\SiftPyramid.h">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\estimators\absolute_pose.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\estimators\affine_transform.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\estimators\coordinate_frame.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\estimators\es_essential_matrix.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\estimators\es_homography_matrix.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\estimators\es_pose.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\estimators\es_triangulation.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\estimators\es_two_view_geometry.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\estimators\es_utils.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\estimators\essential_matrix_coeffs.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\estimators\essential_matrix_poly.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\estimators\euclidean_transform.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\estimators\fundamental_matrix.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\estimators\generalized_absolute_pose.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\estimators\generalized_absolute_pose_coeffs.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\estimators\generalized_relative_pose.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\estimators\similarity_transform.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\estimators\translation_transform.h">
+      <Filter>estimators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\optim\bundle_adjustment.h">
+      <Filter>optim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\optim\combination_sampler.h">
+      <Filter>optim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\optim\least_absolute_deviations.h">
+      <Filter>optim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\optim\loransac.h">
+      <Filter>optim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\optim\progressive_sampler.h">
+      <Filter>optim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\optim\random_sampler.h">
+      <Filter>optim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\optim\ransac.h">
+      <Filter>optim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\optim\sampler.h">
+      <Filter>optim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\optim\sprt.h">
+      <Filter>optim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\optim\support_measurement.h">
+      <Filter>optim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\controllers\automatic_reconstruction.h">
+      <Filter>controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\sfm\incremental_mapper.h">
+      <Filter>sfm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\sfm\incremental_triangulator.h">
+      <Filter>sfm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\libs\controllers\controller_incremental_mapper.h">
+      <Filter>controllers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\libs\util\bitmap.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\util\camera_specs.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\util\cuda.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\util\cudacc.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\util\logging.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\util\math.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\util\misc.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\util\opengl_utils.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\util\option_manager.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\util\ply.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\util\random.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\util\string.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\util\threading.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\util\timer.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\util\version.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\feature\extraction.cc">
+      <Filter>feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\feature\matching.cc">
+      <Filter>feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\feature\sift.cc">
+      <Filter>feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\feature\types.cc">
+      <Filter>feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\feature\utils.cc">
+      <Filter>feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\retrieval\geometry.cc">
+      <Filter>retrieval</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\retrieval\vote_and_verify.cc">
+      <Filter>retrieval</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\camera.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\camera_database.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\camera_models.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\camera_rig.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\correspondence_graph.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\database.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\database_cache.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\essential_matrix.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\gps.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\homography_matrix.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\image.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\image_reader.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\line.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\point2d.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\point3d.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\polynomial.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\pose.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\projection.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\reconstruction.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\reconstruction_manager.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\scene_clustering.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\similarity_transform.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\track.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\triangulation.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\undistortion.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\visibility_pyramid.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\base\warp.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\CLTexImage.cpp">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\CuTexImage.cpp">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\FrameBufferObject.cpp">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\GlobalUtil.cpp">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\GLTexImage.cpp">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\ProgramCG.cpp">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\ProgramCL.cpp">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\ProgramGLSL.cpp">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\PyramidCL.cpp">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\PyramidCU.cpp">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\PyramidGL.cpp">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\ShaderMan.cpp">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\SiftGPU.cpp">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\SiftMatch.cpp">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\SiftMatchCU.cpp">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\thirdparty\SiftGPU\SiftPyramid.cpp">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\estimators\absolute_pose.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\estimators\affine_transform.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\estimators\coordinate_frame.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\estimators\es_essential_matrix.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\estimators\es_homography_matrix.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\estimators\es_pose.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\estimators\es_triangulation.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\estimators\es_two_view_geometry.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\estimators\es_utils.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\estimators\fundamental_matrix.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\estimators\generalized_absolute_pose.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\estimators\generalized_absolute_pose_coeffs.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\estimators\generalized_relative_pose.cc">
+      <Filter>estimators</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\optim\bundle_adjustment.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\optim\combination_sampler.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\optim\least_absolute_deviations.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\optim\progressive_sampler.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\optim\random_sampler.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\optim\sprt.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\optim\support_measurement.cc">
+      <Filter>optim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\controllers\automatic_reconstruction.cc">
+      <Filter>controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\sfm\incremental_mapper.cc">
+      <Filter>sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\sfm\incremental_triangulator.cc">
+      <Filter>sfm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\libs\controllers\controller_incremental_mapper.cc">
+      <Filter>controllers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\libs\util\version.h">
+      <Filter>util</Filter>
+    </None>
+    <None Include="..\libs\thirdparty\SiftGPU\LICENSE">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\libs\thirdparty\SiftGPU\CMakeLists.txt">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\libs\thirdparty\SiftGPU\ProgramCU.cu">
+      <Filter>thirdparty\SiftGPU</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>
